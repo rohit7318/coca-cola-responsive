@@ -1,0 +1,574 @@
+* {
+     margin:0;
+     padding:0;
+     box-sizing:border-box;
+     font-family: 'Gilroy';
+     /* overflow-x: hidden; */
+}
+
+
+html,body
+{
+     width:100%;
+     height:100vh;
+    /* background-color: red; */
+}
+          
+#main
+{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #111;
+}
+
+#nav
+{
+    width: 100%;
+    height: 10vh;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5vw;
+    color: white;
+}
+#nav a 
+{
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+
+}
+
+i
+{
+    color: white;
+    margin-right: 5px;
+}
+
+.search
+{
+    color: white;
+}
+
+
+#center
+{
+    display: flex;
+    column-gap: 1vw;
+    align-items: center;
+}
+
+.line
+{
+    width: 100px;
+    height: 2px;
+    
+    background-color: red;
+}
+
+.coca
+{
+    width: 130px;
+}
+
+/* mediaqueries for nav */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Hero */
+
+#hero
+{
+    width: 100%;
+    min-height: 90vh;
+    /* background-color: red; */
+    display: grid;
+    grid-template-columns: calc(100% / 3) calc(100% / 3) calc(100% / 3);
+    column-gap: 1vw;
+    /* align-items: center; */
+    color: white;
+}
+
+
+#left
+{
+    width: 100%;
+    min-height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 0 3vw;
+    row-gap: 1vw;
+    /* background-color: yellow; */
+}
+
+#left h1 
+{
+    font-size: 4vw;
+    line-height: 1;
+}
+#left h1 span
+{
+    color: red;
+    
+}
+
+#left p 
+{
+    font-size: small;
+    font-weight: 200;
+}
+
+#left .btn
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.5vh;
+  
+}
+
+#left .btn button
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    color: white;
+    border: none;
+    /* border: 1px solid white; */
+    background-color: red;
+    /* border: none; */
+    /* margin-top: 5vh; */
+    padding: 1.5vh 2vh;
+    border-radius: 50vh;
+    font-weight: 400;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.heart
+{
+    margin-left: .8vw;
+    color: red;
+}
+
+#left .btn button:hover
+{
+    cursor: pointer;
+
+}
+
+
+
+
+
+#hero-center
+{
+    width: 100% ;
+    min-height: inherit;
+    /* background-color: aqua; */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    /* border-radius:50%; */
+    border-radius: 20px;
+    position: relative;
+    background: url(https://images.unsplash.com/photo-1567103472667-6898f3a79cf2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    position: relative;
+    
+
+}
+
+.capsule
+{
+    width: 35%;
+    height: 60px;
+    background-color: #333;
+    border-radius: 100px;
+    position: absolute;
+    right:-25%;
+    top: 10%;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0,0.4);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    padding: 0 .5vw;
+    z-index: 999;
+    /* column-gap: .2vw; */
+
+}
+
+.link:hover
+{
+    cursor: pointer;
+}
+
+.profile
+{
+    
+
+    /* align-self: flex-start; */
+    height: 3vw;
+    width: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border-radius: 50%; */
+
+}
+
+.text-vertical
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    row-gap: .5vw;
+
+}
+
+.text-vertical p 
+{
+    font-size: 1vw;
+}
+.text-vertical span
+{
+    color: red;
+    font-size: .8vw;
+}
+
+.profile img 
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top right;
+
+}
+
+
+#right
+{
+    width: 100%;
+    min-height: inherit;
+    position: relative;
+    /* background-color: rgb(6, 10, 255); */
+}
+
+.bottom
+{
+    /* background-color: red; */
+    position: absolute;
+    /* height:50vh; */
+    width: 70%;
+    bottom: 10vh;
+    left: 50%;
+    transform: translate(-50%,0);
+
+
+}
+
+.rb-vertical
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.4vw;
+}
+.bottom>.rb-vertical>h5
+{
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+    padding-bottom: .4vw;
+    font-size: 1.3vw;
+    opacity: 0.8;
+}
+
+.ingredients>.full-opacity
+{
+    font-size: 1.3vw;
+    display: flex;
+    justify-content: space-between;
+    opacity: 1;
+    margin-bottom: .8vw;
+    
+}
+
+
+
+.ingredients p 
+{
+    font-size: small;
+    color: white;
+    width: 85%;
+    opacity: 0.8;
+    /* border: 1px solid white; */
+}
+
+
+.scroll-down
+{
+    margin-top: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1vw;
+    padding: .5vw;
+    /* border: 1px solid rgba(139, 138, 138,0.2); */
+    width: fit-content;
+    border-radius: 100px;
+
+}
+
+.circle
+{
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50%;
+    border: 1px solid rgba(139, 138, 138,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+    
+}
+
+.circle a 
+{
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50%;
+    
+}
+
+.circle a:hover
+{
+    background-color: rgba(185, 30, 30,0.5);
+    color: white !important;
+}
+
+.circle i 
+{
+    color: white;
+
+}
+
+.scroll-down h5 
+{
+    font-size: 1.2vw;
+    color: gray;
+}
+
+
+
+/* #tomb
+{
+    width: 70%;
+    min-height: 70vh;
+    
+    border-top-left-radius: 40%;
+    border-top-right-radius: 40%;
+
+
+
+} */
+
+
+
+@media (max-width:900px) 
+{
+    #center a 
+    {
+        display: none;
+    }
+    .line
+    {
+        width: 40px;
+    }
+    .coca{
+        width: 100px;
+    }
+    
+
+        /*Hero   */
+   #hero 
+   {
+    
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+   }
+
+   #hero #left 
+   {
+    width: 100%;
+    min-height: initial;
+    /* border: 1px solid white; */
+    padding: 0;
+    margin: 0;
+    align-items: start;
+    justify-content: start;
+    padding: 3vw 10vw;
+    margin-bottom: 8vw;
+    /* border: 1px solid white; */
+    
+   }
+
+
+   #left h1 
+   {
+    font-size: 10vw !important;
+    /* border: 1px solid white;  */
+    text-align: start;   
+   }
+
+   #left p
+   {
+    font-size: 6vw !important;
+    text-align: start;
+   }
+
+   #left .btn 
+   {
+    /* border: 1px solid white; */
+    /* text-align: start; */
+    /* justify-self: start; */
+    column-gap: 3vw;
+   }
+  
+
+   #hero-center 
+   {
+    min-width: 90%;
+    /* border: 1px solid white; */
+    margin: 0 auto;
+    /* min-height: 50vh; */
+   }
+
+   .capsule
+   {
+    /* display: none !important; */
+    right: 0% !important;
+    top: -4% !important;
+
+   }
+
+   .profile
+   {
+    height: 40px !important;
+    width: 40px !important;
+    border: 1px solid white;
+    border-radius: 50%;
+   }
+
+   .text-vertical p
+   {
+    font-size: 2.5vw !important;
+    
+   }
+
+   .text-vertical span
+   {
+    font-size: 2vw !important;
+   }
+
+   #right
+   {
+   
+    min-height: initial;
+    width: 100%;
+    margin-top: 10vw;
+
+
+   }
+
+   .bottom
+   {
+    position: static;
+    bottom: initial;
+    width: 100%;
+    transform: translate(0,0);
+    left: 0;
+    padding: 0 3vw;
+    
+   }
+
+   .bottom>.rb-vertical>h5
+   {
+    width: 100%;
+    font-size: 6vw;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-bottom: .8vh;
+
+   }
+
+.ingredients>.full-opacity
+{
+    font-size: 6vw;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.ingredients p 
+{
+    width: 100%;
+    margin: 10px auto;
+    margin-bottom: .8vh;
+    font-size: 4vw;
+
+}
+
+.scroll-down
+{
+    /* margin-left: 5%; */
+    margin: 20px auto;
+}
+.circle
+{
+    width: 5vh;
+    height: 5vh;
+    margin-right: 3vw;
+}
+
+.scroll-down h5 
+{
+    font-size: 2vh;
+}
+   
+
+  
+
+
+
+
+
+}
